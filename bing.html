@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Search in Bing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <a href="" id="link" download="Selfie.png"></a>
+            <h1>Search Bing with voice
+                <img src="https://cdn.vox-cdn.com/thumbor/wBRCdEaZtpAd2bJBlOhtRC6euVk=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/21937385/binglogo.jpg" id="logo">
+            </h1>
+            <hr>
+            <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
+
+            <div class="form-group">
+                <h3>Say what do you want to see</h3>
+                <label>Your voice output : </label>
+                <textarea class="form-control" id="textbox1" readonly="true"></textarea>
+
+            </div>
+            <button class="btn btn-primary" onclick="start()">Start</button>
+            <p>Press the Start button</p>
+        </center>
+    </div>
+    <br><br><br><br><br><br><br>
+    <button id="back" onclick="back()">Back</button>
+
+    <script src="bing.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(function() {
+                jQuery(this).bind("contextmenu", function(event) {
+                    event.preventDefault();
+                    swal.fire('Right Click is Disabled');
+                });
+            });
+        });
+    </script>
+    <script src="swaf.js"></script>
+</body>
+
+</html>
