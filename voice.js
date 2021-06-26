@@ -20,7 +20,7 @@ recognition.onresult = function(event) {
         window.location = "bing.html";
     } else if (Content == "Yandex") {
         window.location = "yandex.html";
-    } else if (Content == "Youtube") {
+    } else if (Content == "YouTube") {
         window.location = "youtube.html";
     } else if (Content == "Facebook") {
         window.location = "facebook.html";
